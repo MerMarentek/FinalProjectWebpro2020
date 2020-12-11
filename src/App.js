@@ -2,6 +2,7 @@ import React from 'react';
 import { Cards, CountryPicker } from './components';
 import { fetchData } from './api/';
 import styles from './App.module.css';
+import Prov from './prov'
 
 import image from './images/covid-19.jpg';
 
@@ -35,6 +36,10 @@ class App extends React.Component {
         <h3>Negara : {country}</h3>
         <Cards data={data}/>
         {/* // <Chart data={data} country={country} />  */}
+        <table className="table table-bordered">
+          <thead className="thead-dark">
+        <Prov/></thead>
+        </table>
         
       </div>
     );
